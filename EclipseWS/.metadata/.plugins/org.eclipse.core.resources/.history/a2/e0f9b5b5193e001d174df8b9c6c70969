@@ -1,0 +1,13 @@
+Feature: Google Search
+
+Scenario: Print all search results
+Given user is on google page
+When user enter Synechron in searchbox
+And click on search
+Then user print all the hyperlinks
+
+
+Scenario: Print all autosuggestions
+Given user is on google page
+When user enter Synechron in searchbox
+Then user print all the autosuggetions

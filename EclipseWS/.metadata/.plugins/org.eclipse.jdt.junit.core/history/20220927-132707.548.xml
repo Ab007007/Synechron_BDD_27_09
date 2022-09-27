@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Traning" tests="3" started="3" failures="0" errors="3" ignored="0">
+  <testsuite name="testrunner.TestRunner" time="115.018">
+    <testsuite name="Form filling" time="115.018">
+      <testcase name="fill the form and validate the success message #1" classname="Form filling" time="38.207">
+        <error>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'ARAVINDA-DELL-P', ip: '172.27.60.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)&#13;
+	at stepdefinition.formStepDefination.user_selects(formStepDefination.java:92)&#13;
+	at ✽.user selects 1(file:///D:/Synechron_BDD/EclipseWS/Traning/feature/formFill.feature:10)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="fill the form and validate the success message #2" classname="Form filling" time="35.334">
+        <error>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 2
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'ARAVINDA-DELL-P', ip: '172.27.60.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)&#13;
+	at stepdefinition.formStepDefination.user_selects(formStepDefination.java:92)&#13;
+	at ✽.user selects 2(file:///D:/Synechron_BDD/EclipseWS/Traning/feature/formFill.feature:10)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="fill the form and validate the success message #3" classname="Form filling" time="41.471">
+        <error>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 3
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'ARAVINDA-DELL-P', ip: '172.27.60.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown&#13;
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)&#13;
+	at stepdefinition.formStepDefination.user_selects(formStepDefination.java:92)&#13;
+	at ✽.user selects 3(file:///D:/Synechron_BDD/EclipseWS/Traning/feature/formFill.feature:10)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

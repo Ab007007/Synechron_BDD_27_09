@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Traning" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="testrunner.TestRunner" time="0.317">
+    <testsuite name="Print AutoSuggestions" time="0.317">
+      <testcase name="Suggestions for Syncchron" classname="Print AutoSuggestions" time="0.12"/>
+      <testcase name="Suggestions for IBM" classname="Print AutoSuggestions" time="0.029"/>
+      <testcase name="Suggestions for Wipro" classname="Print AutoSuggestions" time="0.168"/>
+    </testsuite>
+  </testsuite>
+</testrun>

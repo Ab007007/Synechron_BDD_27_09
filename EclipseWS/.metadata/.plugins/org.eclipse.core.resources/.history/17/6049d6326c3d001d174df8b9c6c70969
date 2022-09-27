@@ -1,0 +1,24 @@
+package stepdefinition;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class AdditionSteps {
+
+	@Given("user has {int} and {int}")
+	public void user_has_and(Integer int1, Integer int2) {
+
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("user perform addition")
+	public void user_perform_addition() {
+
+	}
+
+	@Then("user get sum of two numbers as {int}")
+	public void user_get_sum_of_two_numbers_as(Integer int1) {
+	  
+	}
+}

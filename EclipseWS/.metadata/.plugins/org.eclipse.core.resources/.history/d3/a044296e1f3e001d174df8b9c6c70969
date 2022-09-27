@@ -1,0 +1,21 @@
+Feature: Print AutoSuggestions 
+
+Scenario: Suggestions for Syncchron
+Given user is on google page
+When user enter "Synechron" in searchbox
+Then user print all autosuggetions
+And close the browser
+
+
+Scenario: Suggestions for IBM
+Given user is on google page
+When user enters "IBM" in searchbox
+Then user print all autosuggetions
+And close the browser
+
+
+Scenario: Suggestions for Wipro
+Given user is on google page
+When user enter "Wipro" in searchbox
+Then user print all autosuggetions
+And close the browser

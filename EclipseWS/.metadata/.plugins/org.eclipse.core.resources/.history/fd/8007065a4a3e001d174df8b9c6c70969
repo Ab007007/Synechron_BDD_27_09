@@ -1,0 +1,142 @@
+package stepdefinition;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class formStepDefination {
+
+	WebDriver driver;
+
+	@Given("user in on the formy Form page")
+	public void user_in_on_the_form() {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().window().maximize();
+		driver.get("http://formy-project.herokuapp.com/form");
+
+	}
+
+	@When("user enters {}\\/{}\\/{}")
+	public void user_enters(String fn, String ln, String jt) {
+		driver.findElement(By.id("first-name")).sendKeys(fn);
+		driver.findElement(By.id("last-name")).sendKeys(ln);
+		driver.findElement(By.id("job-title")).sendKeys(jt);
+	}
+
+	@Given("user enters fn {}")
+	public void user_enters_pavan(String fname) {
+		driver.findElement(By.id("first-name")).sendKeys(fname);
+	}
+
+	@Given("user enters ln {}")
+	public void user_enters_joshi(String lname) {
+		driver.findElement(By.id("last-name")).sendKeys(lname);
+	}
+
+	@Given("user enters jt {}")
+	public void user_enters_qa(String jtitle) {
+		driver.findElement(By.id("job-title")).sendKeys(jtitle);
+	}
+
+	@Given("user select qualification {}")
+	public void user_chose_college(String edu) {
+		switch (edu) {
+		case "High School":
+			driver.findElement(By.xpath("//input[@type='radio'][@id='radio-button-1']")).click();
+			break;
+
+		case "College":
+			driver.findElement(By.xpath("//input[@type='radio'][@id='radio-button-2']")).click();
+			break;
+
+		case "Grad School":
+			driver.findElement(By.xpath("//input[@type='radio'][@id='radio-button-3']")).click();
+			break;
+		}
+	}
+
+	@Given("user chose {}")
+	public void user_chose_male(String sex) {
+		switch (sex) {
+		case "Male":
+			driver.findElement(By.id("checkbox-1")).click();
+			break;
+
+		case "Female":
+			driver.findElement(By.id("checkbox-2")).click();
+			break;
+
+		case "Grad School":
+			driver.findElement(By.id("checkbox-3")).click();
+			break;
+		}
+
+	}
+
+	@Given("user selects {}")
+	public void user_selects(String exp) {
+		Select drp = new Select(driver.findElement(By.id("select-menu")));
+		drp.selectByValue(exp);
+
+	}
+
+	@Given("user writes the {}")
+	public void user_writes_the(String dob) {
+		driver.findElement(By.xpath("//input[@id='datepicker']")).sendKeys(dob);
+	}
+
+	@And("user submits")
+	public void user_submits() {
+		driver.findElement(By.xpath("//a[@class='btn btn-lg btn-primary']")).click();
+	}
+
+	@Then("login message should be validated")
+	public void login_message_should_be_validated() {
+
+		driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText();
+
+	}
+
+	@And("close the form browser")
+	public void close_the_browser() {
+		driver.close();
+		driver = null;
+	}
+	
+	@When("user enters all required values and validate successmessage")
+	public void user_enters_all_required_values(DataTable dataTable) {
+		List<List<String>> data = dataTable.asLists();
+		String fn,ln,jt,edu,sex,exp,dob;
+		for (int i = 1; i < data.size(); i++)
+		{
+			fn = data.get(i).get(0);
+			ln = data.get(i).get(1);
+			jt = data.get(i).get(2);
+			edu = data.get(i).get(3);
+			sex = data.get(i).get(4);
+			exp = data.get(i).get(5);
+			dob = data.get(i).get(6);
+			
+			
+			
+		}
+		
+		
+		
+		
+	}
+
+}

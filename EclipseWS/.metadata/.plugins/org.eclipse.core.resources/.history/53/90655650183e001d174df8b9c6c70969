@@ -1,0 +1,49 @@
+package stepdefinition;
+
+import java.time.Duration;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class GoogleSteps {
+	WebDriver driver = null;
+
+	@Given("user is on google page")
+	public void user_is_on_google_page() {
+	  
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
+		Assert.assertEquals("Google", driver.getTitle());
+	}
+	@When("user enter Synechron in searchbox")
+	public void user_enter_synechron_in_searchbox() {
+	    driver.findElement(By.name("q")).sendKeys("Synechron");
+	}
+	@When("click on search")
+	public void click_on_search() {
+
+		driver.findElement(By.xpath("//div[@class='FPdoLc lJ9FBc']//input[@value='Google Search']")).click();()
+	}
+	@Then("user print all the hyperlinks")
+	public void user_print_all_the_hyperlinks() {
+	    // Write code here that turns the phrase above into concrete actions
+	   
+	}
+	@Then("user print all the autosuggetions")
+	public void user_print_all_the_autosuggetions() {
+	    // Write code here that turns the phrase above into concrete actions
+
+	}
+
+
+}

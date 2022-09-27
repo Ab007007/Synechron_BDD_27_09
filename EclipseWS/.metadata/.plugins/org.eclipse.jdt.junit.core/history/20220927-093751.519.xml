@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Traning" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="testrunner.TestRunner" time="0.086">
+    <testsuite name="Google Search" time="0.086">
+      <testcase name="Print all search results" classname="Google Search" time="0.055">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'close the browser' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("close the browser")
+public void close_the_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Print all autosuggestions" classname="Google Search" time="0.023">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'close the browser' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("close the browser")
+public void close_the_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

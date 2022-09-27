@@ -1,0 +1,5 @@
+Scenario: Print all autosuggestions
+Given user is on google page
+When user enter Synechron in searchbox
+Then user print all the autosuggetions
+And close the browser

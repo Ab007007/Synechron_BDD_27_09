@@ -1,0 +1,19 @@
+Feature: Form filling
+
+Scenario Outline: fill the form and validate the success message 
+Given user in on the formy Form page 
+When user enters fn <fname>
+And user enters ln <lname>
+And user enters jt <jtitle>
+And user select qualification <edu> 
+And user chose <sex>
+And user selects <exp>
+And user enters <dob>
+Then login message should be validated
+And close the browser
+
+Examples: 
+| fname | lname | jtitle | edu | sex | exp | dob | 
+| Pavan | Joshi | QA | College | Male | 1 | 18/10/1997 |
+| Rajat | Joshi | DE | High School | Male | 2 | 27/07/2000 |
+| Bhargav | Joshi | teacher | Grad School | Female | 3 | 01/01/2001 |

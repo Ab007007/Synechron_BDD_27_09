@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Traning" tests="3" started="3" failures="1" errors="0" ignored="0">
+  <testsuite name="testrunner.TestRunner" time="0.0">
+    <testsuite name="Addition of two number" time="0.0">
+      <testcase name="Adding two any numbers" classname="Addition of two number" time="0.0"/>
+      <testcase name="Adding two positive numbers" classname="Addition of two number" time="0.0"/>
+      <testcase name="Adding two negative numbers" classname="Addition of two number" time="0.0">
+        <failure>java.lang.AssertionError: expected:&lt;-17&gt; but was:&lt;-7&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:835)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:647)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:633)&#13;
+	at stepdefinition.AdditionSteps.user_get_sum_of_two_numbers_as(AdditionSteps.java:37)&#13;
+	at ✽.user get sum of two numbers as -17(file:///D:/Synechron_BDD/EclipseWS/Traning/feature/addition.feature:17)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

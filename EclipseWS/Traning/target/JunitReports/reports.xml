@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.14">
+<testcase classname="Form filling" name="fill the form and validate the success message" time="17.921">
+<system-out><![CDATA[Given user in on the formy Form page........................................passed
+When user enters all required values and validate successmessage from map...passed
+And close the form browser..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

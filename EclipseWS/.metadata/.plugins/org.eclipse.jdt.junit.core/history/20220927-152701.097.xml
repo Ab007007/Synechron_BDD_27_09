@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Traning" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="testrunner.TestRunner" time="18.436">
+    <testsuite name="Form filling" time="18.435">
+      <testcase name="fill the form and validate the success message" classname="Form filling" time="18.435"/>
+    </testsuite>
+  </testsuite>
+</testrun>

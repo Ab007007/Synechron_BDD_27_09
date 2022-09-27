@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Traning" tests="3" started="3" failures="0" errors="2" ignored="0">
+  <testsuite name="testrunner.TestRunner" time="0.224">
+    <testsuite name="Print AutoSuggestions" time="0.224">
+      <testcase name="Suggestions for Syncchron" classname="Print AutoSuggestions" time="0.107"/>
+      <testcase name="Suggestions for IBM" classname="Print AutoSuggestions" time="0.095">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user enter IBM in searchbox' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("user enter IBM in searchbox")
+public void user_enter_ibm_in_searchbox() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Suggestions for Wipro" classname="Print AutoSuggestions" time="0.022">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user enter Wipro in searchbox' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("user enter Wipro in searchbox")
+public void user_enter_wipro_in_searchbox() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

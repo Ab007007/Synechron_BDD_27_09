@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Traning" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="testrunner.TestRunner" time="25.569">
+    <testsuite name="Google Search" time="25.568">
+      <testcase name="Print all search results" classname="Google Search" time="12.786">
+        <error>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwiwidHyjLT6AhVSwjgGHc7IByYQ4dUDCAs"&gt; is not clickable at point (597, 271). Other element would receive the click: &lt;div class="pcTkSc" role="option"&gt;...&lt;/div&gt;
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'ARAVINDA-DELL-P', ip: '172.27.60.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1e4fd6f2cda3cb50cf43ac70675c19f1, clickElement {id=df8b66b2-4d33-4dea-8c98-e3b70e15a477}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Aravind\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60081}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60081/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1e4fd6f2cda3cb50cf43ac70675c19f1)] -&gt; xpath: //div[@class='FPdoLc lJ9FBc']//input[@name='btnK']]
+Session ID: 1e4fd6f2cda3cb50cf43ac70675c19f1&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)&#13;
+	at stepdefinition.GoogleSteps.click_on_search(GoogleSteps.java:37)&#13;
+	at ✽.click on search(file:///D:/Synechron_BDD/EclipseWS/Traning/feature/google.feature:6)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Print all autosuggestions" classname="Google Search" time="12.767"/>
+    </testsuite>
+  </testsuite>
+</testrun>
