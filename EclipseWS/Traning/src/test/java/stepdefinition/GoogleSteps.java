@@ -10,9 +10,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,6 +23,66 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class GoogleSteps {
 	WebDriver driver = null;
 
+	
+	@Before(order = 1)
+	public void beforeScenario3()
+	{
+		System.out.println("1111111111111111111111111");
+	}
+	
+	@After(order = 1)
+	public void afterScenrio3() {
+		System.out.println("333333333333333333333");
+	}
+	
+	@Before(order = 2)
+	public void beforeScenario2()
+	{
+		System.out.println("22222222222222222222222222222222222");
+	}
+	
+	@After(order = 2)
+	public void afterScenrio2() {
+		System.out.println("4444444444444444444444444444444444");
+	}
+
+	@BeforeStep
+	public void beforeStep()
+	{
+		System.out.println("-------------------------------------------------");
+	}
+	
+	@AfterStep
+	public void afterStep() {
+		System.out.println("..................................................");
+	}
+	
+	@Before("@regression")
+	public void beforeScenario1()
+	{
+		System.out.println("************%%%%%%%%%%%%*************");
+	}
+	
+	@After("@regression")
+	public void afterScenrio1() {
+		System.out.println("##############%%%%%%%%%%%%%%%%%%%-----------######################");
+	}
+	
+	
+	@Before("@regression and @sut")
+	public void beforeScenario5()
+	{
+		System.out.println("************Regression and sut*************");
+	}
+	
+	@After("@regression and @sut")
+	public void afterScenrio5() {
+		System.out.println("############## Regression and sut-----------######################");
+	}
+	
+	
+	
+	
 	@Given("user is on google page")
 	public void user_is_on_google_page() {
 	  
@@ -66,8 +128,8 @@ public class GoogleSteps {
 
 	@Then("close the browser")
 	public void close_the_browser() {
-	    driver.close();
-	    driver = null;
+	  //  driver.close();
+	   // driver = null;
 	}
 
 

@@ -1,5 +1,7 @@
+@nonui
 Feature: Addition of two number
 
+@regression @sut
 Scenario: Adding two any numbers
 Given user has two numbers
 When user perform addition
